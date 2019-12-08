@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese');
+
+body {
+    background-image: url("img/Calculator.jpg");
+    overflow: hidden;
+}
+#calculator {
+    height: 600px;
+    width: 370px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#display {
+    height: 100px;
+    width: 368px;
+    background-color: #000;
+    color: #fff;
+    font: 700 1.8em 'Open Sans', sans-serif;
+    text-align: right;
+    padding-top: 50px;
+    border: none;
+    outline: none;
+}
+
+#calculator .button {
+    background-color: #f6f6f6;
+    width: 92px;
+    height: 92px;
+    color: #000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font: 600 1.3em 'Open Sans', sans-serif;
+}
+#calculator .button:hover {
+    background-color: #8d52dd;
+    color: #fff;
+}
+#calculator .ravno {
+    width: 184px;
+    background-color: #e62e89;
+    color: #fff;
+}
+#calculator .ravno:hover {
+    background-color: #8d52dd;
+}
+#calculator .violet {
+    background-color: #8d52dd;
+    color: #fff;
+}
+#calculator .violet:hover {
+    background-color: #e62e89;
+}
+#calculator .clear {
+    width: 184px;
+    background-color: #8d52dd;
+    color: #fff;
+}
+#calculator .clear:hover {
+    background-color: #e62e89;
+}
+#calculator .delete {
+    background-color: #8d52dd;
+    color: #fff;
+    cursor: no-drop;
+}
+#calculator .delete:hover {
+    background-color: #e62e89;
+}
+.ra {
+    font: 400 2em 'Lobster', cursive;   
+    color: #000;
+    margin: auto;
+    text-align: center;
+    margin-top: 670px;
+    cursor: pointer;
+}
+.ra:hover {
+    color: #fff;
+}
+.pulse {
+    animation-iteration-count: infinite;
+}

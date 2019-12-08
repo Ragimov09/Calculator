@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="animate.css">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <section id="calculator">
+            <form action="#" name="myscreen">
+                <input type="text" id="display" readonly />
+            </form>
+            <table>
+                <tr>
+                    <td colspan="2"><input class="button clear" type="button" value="AC" onclick="clr()" /></td>
+                    <td><input class="button delete" type="button" value="C" /></td>
+                    <td><input class="button violet" type="button" value="+" onclick="push('+')" /></td>
+                </tr>
+                <tr>
+                    <td><input class="button" type="button" value="7" onclick="push(7)" /></td>
+                    <td><input class="button" type="button" value="8" onclick="push(8)" /></td>
+                    <td><input class="button" type="button" value="9" onclick="push(9)" /></td>
+                    <td><input class="button violet" type="button"  value="-" onclick="push('-')" /></td>
+                </tr>
+                <tr>
+                    <td><input class="button" type="button" value="4" onclick="push(4)" /></td>
+                    <td><input class="button" type="button" value="5" onclick="push(5)" /></td>
+                    <td><input class="button" type="button" value="6" onclick="push(6)" /></td>
+                    <td><input class="button violet" type="button" value="x" onclick="push('*')" /></td>
+                </tr>
+                <tr>
+                    <td><input class="button" type="button" value="1" onclick="push(1)" /></td>
+                    <td><input class="button" type="button" value="2" onclick="push(2)" /></td>
+                    <td><input class="button" type="button" value="3" onclick="push(3)" /></td>
+                    <td><input class="button violet" type="button"  value="/" onclick="push('/')" /></td>
+                </tr>
+                <tr>
+                    <td><input class="button" type="button" value="0" onclick="push(0)" /></td>
+                    <td><input class="button" type="button" value="." onclick="push('.')" /></td>
+                    <td colspan="2"><input class="button ravno" type="button" value="=" onclick="equal()" /></td>
+                </tr>
+            </table>
+        </section>
+        <article>
+            <h2 class="ra animated pulse">Created by Ragimov Technology &copy;</h2>
+        </article>
+
+
+        <script>
+        function push(a) {
+            myscreen.display.value = myscreen.display.value + a;
+        }
+        function clr() {
+            myscreen.display.value = 0;
+        }
+        function equal() {
+            myscreen.display.value = eval(myscreen.display.value);
+        }
+        </script>
+    </body>
+</html>
